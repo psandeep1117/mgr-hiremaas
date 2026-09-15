@@ -151,6 +151,28 @@
       color: var(--slate);
       font-size: 14px;
     }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 28px 40px;
+      margin-top: 40px;
+    }
+
+    .badge-argent {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .05em;
+      color: var(--slate);
+      text-decoration: none;
+      border: 1px solid var(--line-strong);
+      padding: 7px 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color .15s, color .15s;
+    }
+    .badge-argent b { color: var(--brass-bright); font-weight: 600; }
+    .badge-argent:hover { border-color: var(--brass); color: var(--ivory); }
   </style>
 </head>
 <body>
@@ -186,5 +208,11 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="badge-argent" href="https://argentai.io/labs/hiremaas" target="_blank" rel="noopener">A product of <b>ArgentAI</b></a>
+    </div>
+  </footer>
 </body>
 </html>
